@@ -34,11 +34,10 @@ ul {
     margin: 0; /* Remove margins */
 }
 
-.button {
-    display: none;
-}
 
-theList:hover + .button {
+/* list is not on hover and is the parent of button so button is not visible*/
+li:not(:hover) > .button {
     color: red ;
     display: block;
+    visibility: hidden;
 }

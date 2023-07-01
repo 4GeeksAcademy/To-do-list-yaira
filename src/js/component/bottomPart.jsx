@@ -1,18 +1,11 @@
 import React from 'react';
 
 const BottomPart = (props) => {
-
-
-    const footerMessage = (props) => {
-        let somethingIsAdded = props.somethingIsAdded
-        if(somethingIsAdded){
-            return <quantity/>
-        }
-    }
-
+        //array.isArray is a checker to see if its an array
     return(
         <div className="bottompart">
-             {props.todos.length}
+         {Array.isArray(props.todos) && props.todos.length > 0 ? 'Remaining ' + props.todos.length : 'No task, add task'}
+         {console.log(props.todos)}
         </div>
     )
 }

@@ -4,7 +4,7 @@ import BottomPart from "./bottomPart";
 
 const InputBar = () => {
     const [todos, setTodos] = useState([])
-    
+    console.log(todos);
     //creates new todo 
     //todoinput is the name of the input, 
     //in the IF() todo is saying 'cleandishes' and 'CLEANDISHES' is the same so isNew is false because its not a new thing
@@ -55,7 +55,8 @@ const InputBar = () => {
                     )
                 })}
             </ul>
-            <BottomPart todos = {todos.length == '' ? todos.map(x => x + 1) : 'No Tasks Add Task'}/>
+            <BottomPart todos = {todos} />
+
         </div>
     );
 }
