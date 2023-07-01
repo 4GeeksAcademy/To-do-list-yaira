@@ -22,9 +22,23 @@ body {
 }
 
 .input {
-    color: red;
     box-sizing: border-box;
     width: 75%;
     margin-left: 3px;
     
+}
+
+ul {
+    list-style-type: none; /* Remove bullets */
+    padding-left: 1rem;
+    margin: 0; /* Remove margins */
+}
+
+.button {
+    display: none;
+}
+
+theList:hover + .button {
+    color: red ;
+    display: block;
 }

@@ -1,9 +1,18 @@
 import React from 'react';
 
 const BottomPart = (props) => {
+
+
+    const footerMessage = (props) => {
+        let somethingIsAdded = props.somethingIsAdded
+        if(somethingIsAdded){
+            return <quantity/>
+        }
+    }
+
     return(
         <div className="bottompart">
-            todos {props.todos.length}
+             {props.todos.length}
         </div>
     )
 }

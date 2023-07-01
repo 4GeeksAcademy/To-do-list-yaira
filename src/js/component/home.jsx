@@ -9,7 +9,7 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //create your first component
 const Home = () => {
 	return (
-		<div className="text-center">
+		<div>
 			<Header/>
 			<div className="notepad mt-3 mx-auto container">
 				<div className="row">
